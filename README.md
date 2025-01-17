@@ -26,3 +26,6 @@ docker tag {imageid} pycharm_helpers:{replace your pycharm build no}
 # 等待PyCharm解释器依赖加载结束
 <img width="745" alt="image" src="https://github.com/user-attachments/assets/ed7ad417-d366-4d31-b8fa-69e389fa8032" />
 只有出现对应镜像中的依赖，才能表示正常加载成功
+
+
+如果你本地有pycharm_helpers这个文件夹(https://github.com/mrofiq/pycharm_helpers)，那么就可以把此项目内的Dockerfile文件放在pycharm_helpers根目录下构建docker镜像，当然Dockerfile中的PyCharm构建版本号需要改为你自己的PyCharm版本号，构建出的镜像tag也需要与你的PyCharm版本号一致
